@@ -2,7 +2,11 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 
 const SearchDesktopHeader = (props) => {
-  return <h1>This is a Header</h1>;
+  return (
+    <div className="header__desktop row">
+      <h1>This is a Header</h1>
+    </div>
+  );
 };
 
 export default withRouter(SearchDesktopHeader);

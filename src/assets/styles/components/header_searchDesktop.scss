@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+.header__desktop {
+  position: relative;
+  height: 70px;
+  width: calc(100% + 15px);
+  padding: 0;
+  align-items: center;
+  color: black;
+  overflow: hidden;
+  &-logo {
+    position: relative;
+    left: 5.5rem;
+    text-decoration: none;
+    width: 236px;
+    margin: 0;
+    z-index: 3000;
+    a {
+      display: block;
+    }
+    img {
+      margin: 0;
+    }
+  }
+  &-cart {
+    position: relative;
+    display: block;
+    right: 50px;
+    width: 30px;
+  }
+  &-createShop {
+    position: relative;
+    display: block;
+    right: 40px;
+    a {
+      position: relative;
+      display: flex;
+      padding: 10px 20px;
+      height: 45px;
+      color: white;
+      border: 1px solid #ffffff;
+      vertical-align: center;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      margin: 0;
+      transition: all ease 600ms;
+      span {
+        position: relative;
+        top: 0px;
+      }
+      img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+      }
+      &:hover,
+      :active {
+        background-color: #209aa5;
+        border: 1px solid #1c8892;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 8px;
+    right: 80px;
+    padding: 0;
+    margin: 0;
+    li {
+      position: relative;
+      display: block;
+      margin-left: 40px;
+      font-size: 0.9rem;
+      a {
+        color: white;
+        transition: all ease 600ms;
+        &:hover,
+        :active {
+          color: #156970;
+        }
+      }
+    }
+  }
+}
