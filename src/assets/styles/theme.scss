@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+// Lato
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+
+/* -- Bamboo Theme --*/
+
+//-- UX NEXT DIGITAL
+$green: #18aa4d;
+$green-deep: #11240d;
+$green-dark: #337017;
+$green-medium: #4a9e22;
+$green-light: #8cea5f;
+$green-white: #d2f7df;
+
+//-- UX PRIMARY COLORS 100 Light -> 600 Dark
+$primary: $green;
+$primary-100: $green-white;
+$primary-200: $green-light;
+$primary-300: $green;
+$primary-400: $green-medium;
+$primary-500: $green-dark;
+$primary-900: $green-deep;
+
+$background-color: #fcf7e7;
+
+/* ---- TEXT THEME SETTINGS ---*/
+$body-font-family: "Lato", sans-serif;
+$header-font-family: "Inter", sans-serif;
+$paragraph-font-family: "Lato", sans-serif;
+$logo-font-family: "Inter", sans-serif;
+
+* {
+  font-family: $body-font-family;
+}
+
+/* ---- bootstrap 4 MEDIA QUERIES ---*/
+$extra-small-grid: 36rem; // < 576px
+$small-grid: 36rem; // >= 576px sm
+$medium-grid: 48rem; // >= 768px md
+$large-grid: 62rem; // >= 992px lg
+$extra-large-grid: 75rem; // >= 1200px xl
