@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter, Link } from "react-router-dom";
 import LogoElement from "./LogoElement";
-import {} from "material-design-icons";
+import SearchBar from "./Header_search-bar";
 
 const SearchDesktopHeader = (props) => {
   return (
@@ -12,11 +12,7 @@ const SearchDesktopHeader = (props) => {
         </Link>
       </div>
       <div className="header__desktop-search">
-        <button className="header__desktop-search-button">Products</button>
-        <input
-          className="header__desktop-search-input"
-          placeholder="Search for products..."
-        />
+        <SearchBar />
       </div>
       <button className="header__desktop-browse">Browse</button>
       <div role="button" className="header__desktop-shopping_list">
