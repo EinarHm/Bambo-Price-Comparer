@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import SearchDesktopHeader from "./components/SearchDesktopHeader";
 const SearchHeader = (props) => {
   return (
-    <header>
+    <header className={"header"}>
       <SearchDesktopHeader></SearchDesktopHeader>
     </header>
   );

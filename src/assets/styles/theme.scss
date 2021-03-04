@@ -3,6 +3,7 @@
 // Lato
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 /* -- Bamboo Theme --*/
 
@@ -11,8 +12,14 @@ $green: #18aa4d;
 $green-deep: #11240d;
 $green-dark: #337017;
 $green-medium: #4a9e22;
-$green-light: #8cea5f;
+$green-light: #1fd862;
 $green-white: #d2f7df;
+
+//Miscelaneous Colors
+$grey-apple: #f3f2f8;
+$grey-text: #7f7f7f;
+$raspberry: #b31919;
+$bread: #fcf7e7;
 
 //-- UX PRIMARY COLORS 100 Light -> 600 Dark
 $primary: $green;
@@ -23,8 +30,33 @@ $primary-400: $green-medium;
 $primary-500: $green-dark;
 $primary-900: $green-deep;
 
-$background-color: #fcf7e7;
+$background-color: $bread;
 
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
 /* ---- TEXT THEME SETTINGS ---*/
 $body-font-family: "Lato", sans-serif;
 $header-font-family: "Inter", sans-serif;
