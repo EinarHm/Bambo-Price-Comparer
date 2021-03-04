@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 
-const SearchBar = (props) => {
+const HeaderSearchBar = (props) => {
   return (
     <div className="search-bar">
       <button className="search-bar-button">
@@ -17,4 +17,4 @@ const SearchBar = (props) => {
   );
 };
 
-export default withRouter(SearchBar);
+export default withRouter(HeaderSearchBar);

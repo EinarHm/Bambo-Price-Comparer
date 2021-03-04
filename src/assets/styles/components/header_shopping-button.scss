@@ -1,0 +1,34 @@
+.header-shopping-button {
+  width: $shopping-button-width;
+  background-color: $primary;
+  color: $grey-apple;
+  height: 48px;
+  text-align: center;
+  border-radius: 5px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &-icon-wrapper {
+    width: calc(#{$shopping-button-width}/ 3);
+    line-height: 48px;
+  }
+  &-text-wrapper {
+    text-align: start !important;
+    width: calc(2 *#{$shopping-button-width}/ 3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 37px;
+  }
+  &-text-compare {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  &-text-products {
+    font-weight: 500;
+    margin-top: -22px;
+    font-size: 0.7rem;
+  }
+}
