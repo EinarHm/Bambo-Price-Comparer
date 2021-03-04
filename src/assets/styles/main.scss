@@ -1,9 +1,11 @@
 header {
   display: block;
+  font-family: $header-font-family;
 }
 body {
   margin: 0;
   background-color: $background-color !important;
+  font-family: $body-font-family !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;

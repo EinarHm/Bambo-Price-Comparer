@@ -7,21 +7,34 @@
     font-weight: bold;
     height: 48px;
     border-radius: 50px 0px 0px 50px;
-    padding: 0px 15px 0px 0px;
+    padding: 0px 15px 0px 15px;
     box-shadow: 0px;
     border: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    span {
+      margin-left: 25px;
+    }
   }
   &-input {
     width: calc(100% - 165px);
     height: 48px;
     border-radius: 0px 50px 50px 0px;
     border: none;
-    text-indent: 20px;
+    text-indent: 44px;
   }
   &-input::placeholder {
     color: $grey-text;
   }
   &-input:focus {
     outline: none;
+  }
+  &-icon {
+    position: relative;
+    top: -35px;
+    right: -170px;
+    transition: right 0.2s;
+    color: $grey-text;
   }
 }

@@ -16,8 +16,17 @@ const SearchDesktopHeader = (props) => {
       </div>
       <button className="header__desktop-browse">Browse</button>
       <div role="button" className="header__desktop-shopping_list">
-        <span class="material-icons">attach_money</span>
-        <span>Compare</span>
+        <div className="header__desktop-shopping_list-icon-wrapper">
+          <span class="material-icons">attach_money</span>
+        </div>
+        <div className="header__desktop-shopping_list-text-wrapper">
+          <span className="header__desktop-shopping_list-text-compare">
+            Compare
+          </span>
+          <span className="header__desktop-shopping_list-text-products">
+            62 Products
+          </span>
+        </div>
       </div>
     </div>
   );

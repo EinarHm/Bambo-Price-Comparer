@@ -8,7 +8,7 @@ function PriceComparer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Price Comparer
+        {/* Price Comparer */}
       </a>
     </SearchPage>
   );

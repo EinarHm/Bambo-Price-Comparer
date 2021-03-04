@@ -63,10 +63,6 @@ $header-font-family: "Inter", sans-serif;
 $paragraph-font-family: "Lato", sans-serif;
 $logo-font-family: "Inter", sans-serif;
 
-* {
-  font-family: $body-font-family;
-}
-
 /* ---- bootstrap 4 MEDIA QUERIES ---*/
 $extra-small-grid: 36rem; // < 576px
 $small-grid: 36rem; // >= 576px sm

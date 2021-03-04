@@ -27,8 +27,7 @@ $margin-right: 25px;
     width: calc(
       100% - #{$shopping-button-width} - #{$logo-width} - #{$browse-button-width} -
         #{$margin-right * 2}
-   );
-    
+    );
   }
   &-browse {
     background-color: $bread;
@@ -44,7 +43,31 @@ $margin-right: 25px;
     height: 48px;
     text-align: center;
     border-radius: 5px;
-    line-height: 48px;
     vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &-icon-wrapper {
+      width: calc(#{$shopping-button-width}/ 3);
+      line-height: 48px;
+    }
+    &-text-wrapper {
+      text-align: start !important;
+      width: calc(2 *#{$shopping-button-width}/ 3);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      line-height: 37px;
+    }
+    &-text-compare {
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    &-text-products {
+      font-weight: 500;
+      margin-top: -22px;
+      font-size: 0.7rem;
+    }
   }
 }
