@@ -1,0 +1,209 @@
+$border-radius: 24px;
+.with-image {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  border-radius: 24px 24px 0 0;
+  img {
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 24px 24px 0 0;
+  }
+}
+
+.img {
+  outline: none;
+}
+
+.product-details .gatsby-image-wrapper {
+  margin-bottom: 30px;
+  height: 500px;
+}
+
+.details_List {
+  height: 150px;
+  border-radius: $border-radius $border-radius 0 0;
+  margin: 0 0 30px 0;
+  -webkit-box-shadow: 0px 3px 8px -3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 8px -3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  border: 1px solid #cccccc73;
+  border-radius: $border-radius;
+  font-family: $body-font-family;
+}
+
+.list_not_available {
+  background-color: #eaf9fa;
+}
+.product-main .details_List:hover {
+  -webkit-box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.5);
+}
+.product-main .details_List .details_inner {
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 220px;
+  font-family: $body-font-family;
+  &_no_available {
+    height: fit-content;
+    padding: 20px;
+  }
+}
+.details_inner_info {
+  display: flex;
+  margin-bottom: 0.2rem;
+  h2 {
+    flex: 2;
+  }
+}
+
+.not-available {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  border-radius: 24px 24px 0 0;
+  img {
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 24px 24px 0 0;
+    opacity: 0.2;
+  }
+}
+
+.details_inner_price {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  .unit {
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-top: 9px;
+    margin-bottom: 5px;
+  }
+}
+.details_inner_desc {
+  flex-grow: 1;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+.product-main .details_List .details_inner h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.product-main .details_List .details_inner h2 a {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-main .details_List .details_inner p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.product-main .details_List .dv-star-rating i {
+  font-size: 22px;
+}
+
+.product-details .gatsby-image-wrapper {
+  margin-bottom: 30px;
+}
+span.price {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+span.quantity {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.snipcart-add-item {
+  border: 2px solid $primary;
+  padding: 4px 30px;
+  display: inline-block;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.btn-not-filled {
+  color: $primary !important;
+}
+.btn-filled {
+  color: #fff !important;
+  background: $primary;
+}
+
+.btn-filled-secondary {
+  background: red;
+  border: 2px solid red;
+  color: white;
+}
+.btn-filled-secondary:hover {
+  color: white;
+}
+.snipcart-add-item i.fas {
+  margin-right: 8px;
+}
+
+.add-item-wrapper {
+  // margin: auto;
+  div {
+    flex: 1;
+    margin: 6px 0;
+    text-align: center;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+  .product-main .details_List .details_inner {
+    min-height: 210px;
+    height: 100%;
+  }
+  .product-main .details_List .gatsby-image-wrapper {
+    height: 160px;
+  }
+  .product-main .details_List .details_inner h2 {
+    font-size: 20px;
+  }
+  .product-main .details_List .details_inner h2 a {
+    font-size: 1.7rem;
+  }
+  span.price {
+    font-size: 1.7rem;
+  }
+  .product-main .details_List .details_inner p {
+    font-size: 18px;
+  }
+  .product-main .details_List .details_inner .text-right.align-self-center {
+    text-align: left !important;
+  }
+
+  .with-underline {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .snipcart-add-item {
+    padding: 4px 40px;
+    font-size: 1.1rem;
+  }
+}
