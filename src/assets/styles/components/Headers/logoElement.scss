@@ -1,0 +1,12 @@
+$logo-width: 132px;
+
+.logoElement {
+  width: $logo-width;
+  float: left;
+  line-height: $header-height;
+
+  img {
+    margin: 0;
+    width: 132px;
+  }
+}

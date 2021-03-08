@@ -15,9 +15,13 @@ $green-medium: #4a9e22;
 $green-light: #1fd862;
 $green-white: #d2f7df;
 
-//Miscelaneous Colors
+//--GRAY
 $grey-apple: #f3f2f8;
+$grey-light: #afafaf;
 $grey-text: #7f7f7f;
+$grey-dark: #3f3f3f;
+
+// -- MISCELANEUS
 $raspberry: #b31919;
 $bread: #fcf7e7;
 
@@ -57,6 +61,8 @@ $background-color: $bread;
   /* Support for IE. */
   font-feature-settings: "liga";
 }
+
+$header-height: 48px;
 /* ---- TEXT THEME SETTINGS ---*/
 $body-font-family: "Inter", sans-serif;
 $header-font-family: "Inter", sans-serif;
