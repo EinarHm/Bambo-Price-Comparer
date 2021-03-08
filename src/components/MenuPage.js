@@ -1,16 +1,12 @@
 import React from "react";
 import MenuHeader from "./Headers/MenuHeader";
-import PropTypes from "prop-types";
+import PageContainer from "./PageContainer";
 
 const Page = ({ children }) => (
   <div>
     <MenuHeader />
-    {children}
+    <PageContainer>{children}</PageContainer>
   </div>
 );
-
-Page.propTypes = {
-  children: PropTypes.element.isRequired,
-};
 
 export default Page;

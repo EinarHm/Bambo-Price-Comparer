@@ -1,0 +1,66 @@
+.my-supplies__page {
+  box-sizing: border-box;
+  &-container {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.flex-item-left {
+  padding: 50px 30px;
+  flex: 50%;
+  &-title {
+    padding: 0;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: $grey-dark;
+  }
+  &-suppliers-container {
+    width: 100%;
+  }
+  &-supplier-box {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    &-image {
+      flex: 50%;
+
+      img {
+        max-width: 80%;
+        height: auto;
+        object-fit: cover;
+        float: left;
+      }
+    }
+    &-info {
+      flex: 50%;
+      text-align: left;
+      margin-left: 1rem;
+
+      &-name {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $grey-dark;
+      }
+      &-address {
+        font-weight: 400;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 20px;
+  flex: 50%;
+}
