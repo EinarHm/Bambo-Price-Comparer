@@ -1,9 +1,9 @@
 import MenuPage from "../components/MenuPage";
 import Helmet from "react-helmet";
-import BambooLogo from "../assets/images/bambooLogo.png";
-import CostcoLogo from "../assets/images/costologo.png";
+import SuppliesContent from "../components/SuppliesContent";
+import SuppliesMap from "../components/SuppliesMap";
 
-function Checkout() {
+function MySuppliers() {
   return (
     <MenuPage>
       <div>
@@ -13,41 +13,8 @@ function Checkout() {
         </Helmet>
         <div className="my-supplies__page">
           <div className="my-supplies__page-container">
-            <div className="flex-item-left">
-              <div className="flex-item-left-title">Jhony's Pizzeria</div>
-              <div className="flex-item-left-suppliers-container">
-                <div className="flex-item-left-supplier-box">
-                  <div className="flex-item-left-supplier-box-image">
-                    <img src={CostcoLogo} alt="logo Bamboo" />
-                  </div>
-                  <div className="flex-item-left-supplier-box-info">
-                    <div className="flex-item-left-supplier-box-info-name">
-                      Costco
-                    </div>
-                    <div className="flex-item-left-supplier-box-info-address">
-                      Super mega long addres to se how it will integrate in the
-                      future
-                    </div>
-                  </div>
-                </div>
-                <div className="flex-item-left-supplier-box">
-                  <div className="flex-item-left-supplier-box-image">
-                    <img src={BambooLogo} alt="logo Bamboo" />
-                  </div>
-                  <div className="flex-item-left-supplier-box-info">
-                    <div className="flex-item-left-supplier-box-info-name">
-                      Bamboo
-                    </div>
-                    <div className="flex-item-left-supplier-box-info-address">
-                      Super mega long addres to se how it will integrate in the
-                      future
-                    </div>
-                  </div>
-                </div>
-                <button className="btn btn-primary">Add Supplier</button>
-              </div>
-            </div>
-            <div className="flex-item-right">Right</div>
+            <SuppliesContent />
+            <SuppliesMap />
           </div>
         </div>
       </div>
@@ -55,4 +22,4 @@ function Checkout() {
   );
 }
 
-export default Checkout;
+export default MySuppliers;

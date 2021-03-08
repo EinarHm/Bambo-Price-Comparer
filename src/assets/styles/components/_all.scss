@@ -1,13 +1,10 @@
 @charset "utf-8";
 
 //Importing all components styles
-@import "./Headers/header_searchDesktop.scss";
-@import "./Headers//header_search-bar.scss";
-@import "./Headers//header_shopping-button.scss";
+@import "./Headers/all";
 @import "./product-filter.scss";
 @import "./productCard.scss";
-@import "./Headers/logoElement.scss";
-@import "./Headers/header.scss";
-@import "./Headers/header_menu.scss";
 @import "./page-container.scss";
 @import "./common/Button.scss";
+@import "./supplies-content.scss";
+@import "./SuppliesMap.scss";
